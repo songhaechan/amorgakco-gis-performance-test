@@ -15,7 +15,10 @@ public class KoreanFood {
     private String address;
     @Column(name = "name")
     private String name;
-    @Embedded
-    @Column(name = "location")
-    private Location point;
+
+    private double latitude;
+    private double longitude;
+
+    @Column(name = "cell_id")
+    private String cellId;
 }
